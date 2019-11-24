@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/produits/main_produits.css">
+    <script src="https://kit.fontawesome.com/531f7c49c9.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="shortcut icon" href="images/logo_chevre_portable.png" class="ic"> <!-- icone sur le titre -->
+    <title>Chèvrerie du brabant</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+
+            <div class="logo"><img src="images/logo_chevre_pc.png" class="logot"
+                    alt="logo chèvrerie du brabant couleur marron clair et foncé avec une chèvre et une montagne">
+                <div class="menupc">
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li>
+                            <a class="sub-menu" href="visites.html">Visites</a>
+                        </li>
+                        <li><a class="active" href="produits.html">Produits</a></li>
+                        <li><a href="actualités.html">Actualités</a></li>
+                        <li><a href="gites.html">Gîtes</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="un">
+                <div class="li">
+                    <ul>
+                        <li><a class="active" href="index.html">Accueil</a></li>
+                        <li>
+                            <a class="sub-menu" href="visites.html">Visites</a>
+                        </li>
+                        <li><a class="active" href="produits.html">Produits</a></li>
+                        <li><a href="actualités.html">Actualités</a></li>
+                        <li><a href="gites.html">Gîtes</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+        <div id="menu-toggle" class="menu-toggle me">
+            <i class="fas fa-bars" aria-hidden="true"></i>
+            <div class="logo2"><img src="images/logo_chevre_portable.png" class="logom"
+                    alt="logo chèvrerie du brabant couleur marron clair et foncé avec une chèvre et une montagne"></div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <article>
+                <div class="produits" id="header">
+                    <h2 class="produits__titre">Nos produits</h2>
+                    <div id="myBtnContainer">
+                        <button class="btn active" onclick="filterSelection('all')">Voir tout</button>
+                        <button class="btn" onclick="filterSelection('fromages')">Nos fromages</button>
+                        <button class="btn" onclick="filterSelection('autres')">Autres produits</button>
+                    </div>
+                    <div class="produits__categories">
+                        <div class="produits__categories__fromages" id="fromages">
+                            <div class="column fromages">
+                                <h2 class="produits__categories__fromages__titre">Nos Fromages</h2>
+                                <h3 class="produits__categories__fromages__titre2 na">fromages</h3>
+                            </div>
+                            <div class="pc">
+                                <div class="produits__categories__fromages__conteneur">
+                                    <div class="tablette">
+                                        <div class="column fromages">
+                                            <div class="produits__categories__fromages__conteneur__carte">
+                                                <img src="images/produits/fromage-frais.png"
+                                                    class="produits__categories__fromages__conteneur__carte__images"
+                                                    alt="Denim Jeans">
+                                                <p class="produits__categories__fromages__conteneur__carte__titre">Le
+                                                    fromage
+                                                    frais
+                                                </p>
+                                                <p class="produits__categories__fromages__conteneur__carte__prix">2,40 €
+                                                </p>
+                                                <p class="produits__categories__fromages__conteneur__carte__texte">C'est
+                                                    le
+                                                    fromage
+                                                    de base la Chèvrerie. Ceux qui n'aiment pas trop le chèvre mais
+                                                    mangent
+                                                    des
+                                                    yaourts pourraient le déguster sans aucun problème grâce à sa
+                                                    douceur et
+                                                    à
+                                                    sa
+                                                    fine acidité.<span
+                                                        class="produits__categories__fromages__conteneur__carte__texte__points"
+                                                        id="points"> ...</span>
+                                                    <span
+                                                        class="produits__categories__fromages__conteneur__carte__texte__more"
+                                                        id="more">
+                                                        Chez nous, il est au maximum de la veille. Vous pouvez le garder
+                                                        8
+                                                        jours
+                                                        sans soucis au frigo</span></p>
+                                                <button type="button" id="read" onclick="read()">Voir plus</button>
+                                            </div>
+                                        </div>
+                                        <div class="column fromages">
+                                            <div class="produits__categories__fromages__conteneur__carte">
+                                                <img src="images/produits/fromage-demi-affiné.png"
+                                                    class="produits__categories__fromages__conteneur__carte__images"
+                                                    alt="Denim Jeans">
+                                                <p class="produits__categories__fromages__conteneur__carte__titre">Le
+                                                    Demi-Affiné
+                                                </p>
+                                                <p class="produits__categories__fromages__conteneur__carte__prix">2,40 €
+                                                </p>
+                                                <p class="produits__categories__fromages__conteneur__carte__texte">Pour
+                                                    un
+                                                    fromage
+                                                    d'affinage il est très doux : il n'a que 8 jours de cave et
+                                                    pourtant, il
+                                                    a
+                                                    eu le
+                                                    temps de prendre sa robe colorée.<span
+                                                        class="produits__categories__fromages__conteneur__carte__texte__points"
+                                                        id="1">
+                                                        ...</span>
+                                                    <span
+                                                        class="produits__categories__fromages__conteneur__carte__texte__more"
+                                                        id="2">C'est le fromage idéal pour faire des chèvres chauds car
+                                                        celui-ci
+                                                        se tient bien au four contrairement à la plupart des fromages du
+                                                        commerce.
+                                                    </span></p>
+                                                <button type="button" id="3" onclick="read2()" class="button">Voir
+                                                    plus</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="column fromages">
+                                        <div class="produits__categories__fromages__conteneur__carte__mi">
+                                            <img src="images/produits/fromage-affiné.png"
+                                                class="produits__categories__fromages__conteneur__carte__images"
+                                                alt="Denim Jeans">
+                                            <p class="produits__categories__fromages__conteneur__carte__titre">
+                                                L'Affiné
+                                            </p>
+                                            <p class="produits__categories__fromages__conteneur__carte__prix">2,40 €
+                                            </p>
+                                            <p class="produits__categories__fromages__conteneur__carte__texte">Pour
+                                                les
+                                                amateurs
+                                                de fromages de chèvre il est parfait. Après environ 3 semaines à un
+                                                mois
+                                                en
+                                                cave, il a eu le temps de sécher et développer ses arômes.<span
+                                                    class="produits__categories__fromages__conteneur__carte__texte__points"
+                                                    id="4">
+                                                    ...</span>
+                                                <span
+                                                    class="produits__categories__fromages__conteneur__carte__texte__more"
+                                                    id="5">Parfois, quand la cave est bien pleine, il sèche un peu
+                                                    moins
+                                                    et
+                                                    devient coulant: ceux-ci sont les préférès du chervrier et de la
+                                                    chèvrerie.
+                                                </span></p>
+                                            <button type="button" id="6" onclick="read3()">Voir plus</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pc marg">
+                                <div class="tablette">
+                                    <div class="column fromages">
+                                        <div class="deux">
+                                            <h3 class="produits__categories__fromages__titre2 ri">Aromatisé</h3>
+                                        </div>
+                                        <div class="produits__categories__fromages__conteneur__carte__mi2">
+                                            <img src="images/produits/fromage-echalote.png"
+                                                class="produits__categories__fromages__conteneur__carte__images"
+                                                alt="Denim Jeans">
+                                            <p class="produits__categories__fromages__conteneur__carte__titre">Le
+                                                fromage
+                                                aux
+                                                échalotes
+                                            </p>
+                                            <p class="produits__categories__fromages__conteneur__carte__prix">2,60 €
+                                            </p>
+                                            <p class="produits__categories__fromages__conteneur__carte__texte">C'est
+                                                du
+                                                frai
+                                                du
+                                                jour, parsemé d'échalotes très jeunes, donc légèrement sucrées. Ces
+                                                fromages
+                                                sont très gracieux.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tablette">
+                                    <div class="column fromages">
+                                        <div class="produits__categories__fromages__conteneur__carte">
+                                            <img src="images/produits/fromage-poivrons.png"
+                                                class="produits__categories__fromages__conteneur__carte__images"
+                                                alt="Denim Jeans">
+                                            <p class="produits__categories__fromages__conteneur__carte__titre">Le
+                                                fromage
+                                                aux
+                                                poivrons
+                                            </p>
+                                            <p class="produits__categories__fromages__conteneur__carte__prix">2,60 €
+                                            </p>
+                                            <p class="produits__categories__fromages__conteneur__carte__texte">Comme
+                                                précédemment, c'est du frais avec des poivrons coupés finement et
+                                                entouré de
+                                                quelques graines de moutarde. Ils sont bien relevés et très
+                                                appréciés
+                                                pour
+                                                l'apéritif.</p>
+                                        </div>
+                                    </div>
+                                    <div class="column fromages">
+                                        <div class="produits__categories__fromages__conteneur__carte">
+                                            <img src="images/produits/fromage-herbes.png"
+                                                class="produits__categories__fromages__conteneur__carte__images"
+                                                alt="Denim Jeans">
+                                            <p class="produits__categories__fromages__conteneur__carte__titre">Le
+                                                fromage
+                                                aux
+                                                herbes
+                                            </p>
+                                            <p class="produits__categories__fromages__conteneur__carte__prix">25
+                                                €/Kg
+                                            </p>
+                                            <p class="produits__categories__fromages__conteneur__carte__texte">De
+                                                nouveau du
+                                                frais, avec des herbes et un peu d'ail. C'est un des plus relevés et
+                                                comme
+                                                le
+                                                poivron, il va bien à l'apéritif. C'est un fromage que l'on vend le
+                                                plus
+                                                à
+                                                la
+                                                ferme.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tablette"></div>
+                            <div class="column fromages">
+                                <h3 class="produits__categories__fromages__titre2">tomme & tommette</h3>
+                            </div>
+                            <div class="pc marg">
+                                <div class="tablette">
+                                    <div class="column fromages">
+                                        <div class="produits__categories__fromages__conteneur__carte">
+                                            <img src="images/produits/tomme.png"
+                                                class="produits__categories__fromages__conteneur__carte__images"
+                                                alt="Denim Jeans">
+                                            <p class="produits__categories__fromages__conteneur__carte__titre">La
+                                                tomme
+                                            </p>
+                                            <p class="produits__categories__fromages__conteneur__carte__prix">25
+                                                €/Kg</p>
+                                            <p class="produits__categories__fromages__conteneur__carte__texte">C'est
+                                                un
+                                                fromage
+                                                de garde par excellence: 80 litres de lait et minimum 2 mois
+                                                d'affinage
+                                                en
+                                                cave
+                                                sont nécessaire pour cette tomme.<span
+                                                    class="produits__categories__fromages__conteneur__carte__texte__points"
+                                                    id="7">
+                                                    ...</span>
+                                                <span
+                                                    class="produits__categories__fromages__conteneur__carte__texte__more"
+                                                    id="8">Mais quel magnifique résultat ! Mi-gruyère, mi-comté, il
+                                                    developpe
+                                                    des arômes fins et subtils en bouche. Goûtez-la et vous serez
+                                                    conquis.
+                                                </span></p>
+                                            <button type="button" id="9" onclick="read4()">Voir plus</button>
+                                        </div>
+                                    </div>
+                                    <div class="column fromages">
+                                        <div class="produits__categories__fromages__conteneur__carte">
+                                            <img src="images/produits/tomette.png"
+                                                class="produits__categories__fromages__conteneur__carte__images"
+                                                alt="Denim Jeans">
+                                            <p class="produits__categories__fromages__conteneur__carte__titre">La
+                                                tommette
+                                            </p>
+                                            <p class="produits__categories__fromages__conteneur__carte__prix">25
+                                                €/Kg
+                                            </p>
+                                            <p class="produits__categories__fromages__conteneur__carte__texte">La
+                                                tomette
+                                                est
+                                                comme les fromages frais mais simplement de taille supérieure.
+                                                D'environ
+                                                500g,
+                                                elle est affinée en cave entre 1 à 2 mois.<span
+                                                    class="produits__categories__fromages__conteneur__carte__texte__points"
+                                                    id="10">
+                                                    ...</span>
+                                                <span
+                                                    class="produits__categories__fromages__conteneur__carte__texte__more"
+                                                    id="11">
+                                                    C'est le préféré d'un des plus grands restaurants étoilé des
+                                                    Vosges.
+                                                </span></p>
+                                            <button type="button" id="12" onclick="read5()">Voir plus</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="produits__categories__autres" id="autres">
+                            <div class="produits__categories__autres__conteneur">
+                                <div class="column autres">
+                                    <h3 class="produits__categories__autres__titre2 ti">Olive & saucisson</h3>
+                                </div>
+                                <div class="tablette">
+                                    <div class="column autres">
+                                        <div class="produits__categories__fromages__conteneur__carte">
+                                            <img src="images/produits/olives.png"
+                                                class="produits__categories__fromages__conteneur__carte__images"
+                                                alt="Denim Jeans">
+                                            <p class="produits__categories__fromages__conteneur__carte__titre">Chèvres à
+                                                l'huile
+                                                d'olive
+                                            </p>
+                                            <p class="produits__categories__fromages__conteneur__carte__prix">5 €</p>
+                                            <p class="produits__categories__fromages__conteneur__carte__texte">Les
+                                                fromages
+                                                frais se gardent 8 jours au réfrigérateur. Dans l'huile d'olive ils
+                                                se
+                                                gardent 1
+                                                mois sans se dégrader.<span
+                                                    class="produits__categories__fromages__conteneur__carte__texte__points"
+                                                    id="13">
+                                                    ...</span>
+                                                <span
+                                                    class="produits__categories__fromages__conteneur__carte__texte__more"
+                                                    id="14">Au contraire ils s'embellissent des arômes de l'huile
+                                                    d'olive et
+                                                    des
+                                                    herbes. Comme de la fêta, ils se dégustent à l'apéritif.
+                                                    Facilement
+                                                    transportables, c'est une bonne idée de cadeau souvenir.
+                                                </span></p>
+                                            <button type="button" id="15" onclick="read6()">Voir plus</button>
+                                        </div>
+                                    </div>
+                                    <div class="column autres">
+                                        <div class="produits__categories__fromages__conteneur__carte">
+                                            <img src="images/produits/saucisson.png"
+                                                class="produits__categories__fromages__conteneur__carte__images"
+                                                alt="Denim Jeans">
+                                            <p class="produits__categories__fromages__conteneur__carte__titre">
+                                                Le
+                                                saucisson
+                                                sec
+                                                de chèvre
+                                            </p>
+                                            <p class="produits__categories__fromages__conteneur__carte__prix">25
+                                                €/Kg
+                                            </p>
+                                            <p class="produits__categories__fromages__conteneur__carte__texte">Le
+                                                GAEC
+                                                du
+                                                lejol
+                                                nous confectionne du saucisson sec élaboré à partir de la viande de
+                                                nos
+                                                chèvres,
+                                                à laquelle est ajouté du gras de porc.<span
+                                                    class="produits__categories__fromages__conteneur__carte__texte__points"
+                                                    id="16">
+                                                    ...</span>
+                                                <span
+                                                    class="produits__categories__fromages__conteneur__carte__texte__more"
+                                                    id="17">Un saucisson tellement bon ... que nous n'en avons
+                                                    qu'une
+                                                    partie
+                                                    de
+                                                    l'année !.
+                                                </span></p>
+                                            <button type="button" id="18" onclick="read7()">Voir plus</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="produits__categories__autres__conteneur">
+                                <div class="column autres">
+                                    <h3 class="produits__categories__autres__titre2 ti">Terrine, sirops et confitures
+                                    </h3>
+                                </div>
+                                <div class="tablette">
+                                    <div class="column autres">
+                                        <div class="produits__categories__fromages__conteneur__carte">
+                                            <img src="images/produits/terrine-cabris.png"
+                                                class="produits__categories__fromages__conteneur__carte__images"
+                                                alt="Denim Jeans">
+                                            <p class="produits__categories__fromages__conteneur__carte__titre">La
+                                                terrine de
+                                                cabris
+                                            </p>
+                                            <p class="produits__categories__fromages__conteneur__carte__texte">Tout
+                                                le
+                                                monde
+                                                ne
+                                                peut pas recueillir un cabri de la chèvrerie chez soi ... mais
+                                                heureusement
+                                                il
+                                                existe la terrine de cabris, que chacun peut déguster sans
+                                                modération.<span
+                                                    class="produits__categories__fromages__conteneur__carte__texte__points"
+                                                    id="19">
+                                                    ...</span>
+                                                <span
+                                                    class="produits__categories__fromages__conteneur__carte__texte__more"
+                                                    id="20">Notre terrine est bien évidemment à base de viande de
+                                                    cabris
+                                                    de
+                                                    la
+                                                    Chèvrerie accompagnée d'oeuf et de farine. Elle est assaisonnée
+                                                    d'échalotes,
+                                                    de sel, de muscade, de poivre et de cognac.
+                                                </span></p>
+                                            <button type="button" id="21" onclick="read8()" class="button">Voir
+                                                plus</button>
+                                        </div>
+                                    </div>
+                                    <div class="column autres">
+                                        <div class="produits__categories__fromages__conteneur__carte">
+                                            <img src="images/produits/sirop-confitures.png"
+                                                class="produits__categories__fromages__conteneur__carte__images"
+                                                alt="Denim Jeans">
+                                            <p class="produits__categories__fromages__conteneur__carte__titre">
+                                                Sirops et
+                                                confitures
+                                            </p>
+                                            <p class="produits__categories__fromages__conteneur__carte__texte">Des
+                                                sirops et
+                                                différentes confitures (myrtilles, framboises, baies d'élgantier
+                                                sauvage
+                                                dits
+                                                gratte-cul) sont proposées à la vitrine de la Chèvrerie, en
+                                                provenance
+                                                d'un
+                                                producteur de petits fruits rouges à côté de Saint-Dié.<span
+                                                    class="produits__categories__fromages__conteneur__carte__texte__points"
+                                                    id="22">
+                                                    ...</span>
+                                                <span
+                                                    class="produits__categories__fromages__conteneur__carte__texte__more"
+                                                    id="23">Vous trouverez aussi du munster fermier au lait cru du
+                                                    GAEC
+                                                    du
+                                                    Lojel, <strong>plusieurs fois médaillé au salon de l'agriculture
+                                                        à
+                                                        Paris</strong>.
+                                                </span></p>
+                                            <button type="button" id="24" onclick="read9()">Voir plus</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer id="footer" class="ftco-footer ftco-section">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">Nos réseaux sociaux</h2>
+                        <p>Pour plus de renseignement vous pouvez nous suivre sur nos réseaux sociaux.</p>
+                        <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                            <li class="tfco-animate"><a href="#"><span class="icon-twitter"><i
+                                            class="fab fa-twitter"></i></span></a></li>
+                            <li class="tfco-animate"><a href="#"><span class="icon-instagram"><i
+                                            class="fab fa-instagram"></i></span></a></li>
+                            <li class="tfco-animate"><a href="#"><span class="icon-facebook"><i
+                                            class="fab fa-facebook-f"></i></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4 ml-md-4">
+                        <h2 class="ftco-heading-2">Articles</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="#header"><span class="icon-long-arrow-right mr-2"></span>Haut de page</a></li>
+                            <li><a href="#fromages"><span class="icon-long-arrow-right mr-2"></span>Nos fromages</a>
+                            </li>
+                            <li><a href="#autres"><span class="icon-long-arrow-right mr-2"></span>Autres produits</a>
+                            </li>
+                            <li><a href="#footer"><span class="icon-long-arrow-right mr-2"></span>Bas de Page</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">Explorez la Chèvrerie du Brabant</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html"><span class="icon-long-arrow-right mr-2"></span>Accueil</a></li>
+                            <li><a href="visites.html"><span class="icon-long-arrow-right mr-2"></span>Visites</a></li>
+                            <li><a href="produits.html"><span class="icon-long-arrow-right mr-2"></span>Produits</a>
+                            </li>
+                            <li><a href="actualités.html"><span class="icon-long-arrow-right mr-2"></span>Actualités</a></li>
+                            <li><a href="gites.html"><span class="icon-long-arrow-right mr-2"></span>Gîtes</a></li>
+                            <li><a href="contact.html"><span class="icon-long-arrow-right mr-2"></span>Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">Nos coordonnées</h2>
+                        <div class="block-23 mb-3">
+                            <ul>
+                                <li><a href="#"><i class="fas fa-map-marker-alt"></i><span class="text">5 chemin du Haut
+                                            des Bouchaix Col du Brabant 88250 La Bresse</span></a></li>
+                                <li><a href="#"><i class="fas fa-phone"></i><span class="text">+33 3 29 25 66
+                                            16</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>Copyright Houllé Baptiste & Maninchedda Ettore &copy;</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <button onclick="topFunction()" id="myBtn" title="Haut de page"><i class="fas fa-sort-up"></i></button>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="script/main.js"></script>
+    <script src="script/store.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+</html>

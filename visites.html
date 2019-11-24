@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="https://kit.fontawesome.com/531f7c49c9.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="shortcut icon" href="images/logo_chevre_portable.png" class="ic"> <!-- icone sur le titre -->
+    <title>Chèvrerie du brabant</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <div class="logo"><img src="images/logo_chevre_pc.png" alt="logo chèvrerie" class="logot">
+
+                    <div class="menupc">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li>
+                            <a class="sub-menu active" href="visites.html">Visites</a>
+                        </li>
+                        <li><a href="produits.html">Produits</a></li>
+                        <li><a href="actualités.html">Actualités</a></li>
+                        <li><a href="gites.html">Gîtes</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </div>
+
+
+                </div>
+                <div class="un">
+                    <div class="li">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li>
+                            <a class="sub-menu active" href="visites.html">Visites</a>
+                        </li>
+                        <li><a href="produits.html">Produits</a></li>
+                        <li><a href="actualités.html">Actualités</a></li>
+                        <li><a href="gites.html">Gîtes</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+        <div id="menu-toggle" class="menu-toggle me">
+            <i class="fas fa-bars" aria-hidden="true"></i>
+            <div class="logo2"><img src="images/logo_chevre_portable.png" class="logom"
+                    alt="logo chèvrerie du brabant couleur marron clair et foncé avec une chèvre et une montagne"></div>
+        </div>
+    </header>
+
+    <!--SECTION -->
+
+    <section class="sectionmenu" id="haut">
+        <h1 class="sectionmenu__h1">Nos Visites</h1>
+        <div id="myBtnContainer" class="selection">
+            <div class="selection__gratuites">
+                <h2 class="btn activ" onclick="filterSelection('all')">toutes</h2>
+            </div>
+            <div class="selection__gratuites">
+                <h2 class="btn" onclick="filterSelection('gratuites')">gratuites</h2>
+            </div>
+            <div class="selection__pedagogiques">
+                <h2 class="btn" onclick="filterSelection('pedagogique')">pédagogiques</h2>
+            </div>
+        </div>
+    </section>
+
+    <div class="row">
+        <section class="column gratuites" id="gratuites">
+
+            <!--1-->
+
+            <div class="boitegratuites">
+                <div class="boitegratuites__boiteimg">
+                    <h2 class="boitegratuites__boiteimg_titre">Au parc</h2>
+                    <img src="images/gratuit/img1.png" alt=" des plaines">
+                </div>
+                <div class="boitegratuites__boitetext">
+                    <p class="boitegratuites__boitetext_text">Le début de la visite, c’est déjà un premier contact
+                        en
+                        pleine nature, dans les magnifiques espaces
+                        verdoyants du Brabant .
+                        A 15 h, vous pourrez aller chercher les chèvres dans le parc, ou les ramener après la traite
+                        du
+                        soir. (suivant les horaires et les conditions climatiques</p>
+                </div>
+                <div class="boitegratuites__boiteimg">
+                    <h2 class="boitegratuites__boiteimg_titre">Naissances</h2>
+                    <img src="images/gratuit/img2.png" alt="des chêvres">
+                </div>
+                <div class="boitegratuites__boitetext">
+                    <p class="boitegratuites__boitetext_text">Au printemps, vous pourrez assister en direct aux
+                        naissances
+                        des cabris.
+                        Toute l’année, vous pourrez aller dans le box des cabris, pour le bonheur des enfants...
+                    </p>
+                </div>
+            </div>
+
+            <!--2-->
+
+            <div class="boitegratuites">
+                <div class="boitegratuites__boiteimg">
+                    <h2 class="boitegratuites__boiteimg_titre">Avec les enfants</h2>
+                    <img src="images/gratuit/img3.png" alt="enfants dans les champs">
+                </div>
+                <div class="boitegratuites__boitetext">
+                    <p class="boitegratuites__boitetext_text">Tout l’après-midi, les enfants sont en contact avec
+                        les
+                        chèvres, et peuvent leur donner du maïs</p>
+                </div>
+                <div class="boitegratuites__boiteimg">
+                    <h2 class="boitegratuites__boiteimg_titre">Avec le chèvrier</h2>
+                    <img src="images/gratuit/img4.png" alt="tracteurs">
+                </div>
+                <div class="boitegratuites__boitetext">
+                    <p class="boitegratuites__boitetext_text">Pendant ce temps, au milieu de l’exploitation, avec
+                        l’aide
+                        d’un micro et d’une vidéo complète, vous aurez des explications sur les naissances,
+                        l’élevage,
+                        les
+                        diverses fabrications du fromage, et les paysages.</p>
+                </div>
+            </div>
+
+            <!--3-->
+
+            <div class="boitegratuites">
+                <div class="boitegratuites__boiteimg">
+                    <h2 class="boitegratuites__boiteimg_titre">Fromages</h2>
+                    <img src="images/gratuit/img5.png" alt="fromage de chèvre">
+                </div>
+                <div class="boitegratuites__boitetext">
+                    <p class="boitegratuites__boitetext_text">Tout l’après-midi, les enfants sont en contact avec
+                        les
+                        chèvres, et peuvent leur donner du maïs</p>
+                </div>
+                <div class="boitegratuites__boiteimg">
+                    <h2 class="boitegratuites__boiteimg_titre">Dégustation</h2>
+                    <img src="images/gratuit/img6.png" alt="fromage de chèvres dégustation">
+                </div>
+                <div class="boitegratuites__boitetext">
+                    <p class="boitegratuites__boitetext_text">Pendant ce temps, au milieu de l’exploitation, avec
+                        l’aide
+                        d’un micro et d’une vidéo complète, vous aurez des explications sur les naissances,
+                        l’élevage,
+                        les
+                        diverses fabrications du fromage, et les paysages.</p>
+                </div>
+            </div>
+
+            <!--4-->
+
+            <div class="boitegratuites">
+                <div class="boitegratuites__boiteimg">
+                    <h2 class="boitegratuites__boiteimg_titre">La traite</h2>
+                    <img src="images/gratuit/img7.png" alt="traite d'une chèvre">
+                </div>
+                <div class="boitegratuites__boitetext">
+                    <p class="boitegratuites__boitetext_text">Tout l’après-midi, les enfants sont en contact avec
+                        les
+                        chèvres, et peuvent leur donner du maïs</p>
+                </div>
+                <div class="boitegratuites__boiteimg">
+                    <h2 class="boitegratuites__boiteimg_titre">Ventes</h2>
+                    <img src="images/gratuit/img8.png" alt="vente de fromages">
+                </div>
+                <div class="boitegratuites__boitetext">
+                    <p class="boitegratuites__boitetext_text">Pendant ce temps, au milieu de l’exploitation, avec
+                        l’aide
+                        d’un micro et d’une vidéo complète, vous aurez des explications sur les naissances,
+                        l’élevage,
+                        les
+                        diverses fabrications du fromage, et les paysages.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="column pedagogique" id="peda">
+            <!--1bis-->
+
+            <div class="boitepedagogique">
+                <div class="boitepedagogique__boiteimg">
+                    <h2 class="boitepedagogique__boiteimg_titre">L'essentiel ...</h2>
+                    <img class="boitepedagogique__img" src="images/pedagogique/img1.png" alt="une chèvre">
+                </div>
+                <div class="boitepedagogique__boitetext">
+                    <p class="boitepedagogique__boitetext_text">Alimentation des chèvres avec du maïs. Démonstration
+                        de
+                        la
+                        présure : le maillon essentiel pour la fabrication du fromage. Démonstration de la machine à
+                        traire.
+                    </p>
+                </div>
+                <div class="boitepedagogique__boiteimg">
+                    <h2 class="boitepedagogique__boiteimg_titre">... de la visite</h2>
+                    <img class="boitepedagogique__img" src="images/pedagogique/img2.png" alt="une jeune chèvre">
+                </div>
+                <div class="boitepedagogique__boitetext">
+                    <p class="boitepedagogique__boitetext_text">Explication de la naissance des cabris (avec vidéo),
+                        de
+                        la
+                        traite, de la fabrication du fromage.<br>Participation à la fabrication du fromage.<br>"Bain
+                        de
+                        cabris" :
+                        enfants dans l'enclos avec les cabris. <br>Dégustation des différents fromages.</p>
+                </div>
+            </div>
+            <!--2bis-->
+
+            <div class="boitepedagogique">
+                <div class="boitepedagogique__boiteimg">
+                    <h2 class="boitepedagogique__boiteimg_titre">Modalités</h2>
+                    <img class="boitepedagogique__img" src="images/pedagogique/img3.png" alt="une maison">
+                </div>
+                <div class="boitepedagogique__boitetext">
+                    <ul class="boitepedagogique__boitetext_ul">
+                        <li>Utilisation de moyens vidéo et audio</li>
+                        <li>sur réservation</li>
+                        <li>Age minimum : 6 ans</li>
+                        <li>1h30 de visite</li>
+                        <li>Créneaux horaires à respecter : </li>
+                        <li>10h30 - 12h00 et 13h30 - 15h00</li>
+                        <li> 20 enfants maximum</li>
+                        <li>Tarif 2010 : 2,60€ par enfant</li>
+                    </ul>
+                </div>
+                <div class="boitepedagogique__boiteimg">
+                    <h2 class="boitepedagogique__boiteimg_titre">Le petit plus</h2>
+                    <img class="boitepedagogique__img" src="images/pedagogique/img4.png" alt="une plaine">
+                </div>
+                <div class="boitepedagogique__boitetext">
+                    <p class="boitepedagogique__boitetext_text">La chèvrerie du Brabant vous propose de mettre à
+                        l'honneur
+                        votre classe dans son actualité.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!--FIN SECTION-->
+
+    <!-- ///////////////////////////////////////// FOOTER //////////////////////////////////////////// -->
+    <footer id="footer" class="ftco-footer ftco-section">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">Nos réseaux sociaux</h2>
+                        <p>Pour plus de renseignement vous pouvez nous suivre sur nos réseaux sociaux.</p>
+                        <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                            <li class="tfco-animate"><a href="#"><span class="icon-twitter"><i
+                                            class="fab fa-twitter"></i></span></a></li>
+                            <li class="tfco-animate"><a href="#"><span class="icon-instagram"><i
+                                            class="fab fa-instagram"></i></span></a></li>
+                            <li class="tfco-animate"><a href="#"><span class="icon-facebook"><i
+                                            class="fab fa-facebook-f"></i></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4 ml-md-4">
+                        <h2 class="ftco-heading-2">Articles</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="#haut"><span class="icon-long-arrow-right mr-2"></span>Haut de page</a></li>
+                            <li><a href="#gratuites"><span class="icon-long-arrow-right mr-2"></span>Visites gratuites</a></li>
+                            <li><a href="#peda"><span class="icon-long-arrow-right mr-2"></span>Visites pédagogiques</a></li>
+                            <li><a href="#footer"><span class="icon-long-arrow-right mr-2"></span>Bas de Page</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">Explorez la Chèvrerie du Brabant</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html"><span class="icon-long-arrow-right mr-2"></span>Accueil</a></li>
+                            <li><a href="visites.html"><span class="icon-long-arrow-right mr-2"></span>Visites</a></li>
+                            <li><a href="produits.html"><span class="icon-long-arrow-right mr-2"></span>Produits</a>
+                            </li>
+                            <li><a href="actualités.html"><span class="icon-long-arrow-right mr-2"></span>Actualités</a></li>
+                            <li><a href="gites.html"><span class="icon-long-arrow-right mr-2"></span>Gîtes</a></li>
+                            <li><a href="contact.html"><span class="icon-long-arrow-right mr-2"></span>Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">Nos coordonnées</h2>
+                        <div class="block-23 mb-3">
+                            <ul>
+                                <li><a href="#"><i class="fas fa-map-marker-alt"></i><span class="text">5 chemin du Haut
+                                            des Bouchaix Col du Brabant 88250 La Bresse</span></a></li>
+                                <li><a href="#"><i class="fas fa-phone"></i><span class="text">+33 3 29 25 66
+                                            16</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>Copyright Houllé Baptiste & Maninchedda Ettore &copy;</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <button onclick="topFunction()" id="myBtn" title="Haut de page"><i class="fas fa-sort-up"></i></button>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="script/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="script/visites.js"></script>
+</body>
+
+</html>

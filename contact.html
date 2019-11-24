@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/contact/main_contact.css">
+    <script src="https://kit.fontawesome.com/531f7c49c9.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="shortcut icon" href="images/logo_chevre_portable.png" class="ic"> <!-- icone sur le titre -->
+    <title>Chèvrerie du brabant</title>
+</head>
+
+<body>
+
+    <header id="header">
+        <nav>
+
+            <div class="logo"><img src="images/logo_chevre_pc.png" class="logot"
+                    alt="logo chèvrerie du brabant couleur marron clair et foncé avec une chèvre et une montagne">
+
+                <div class="menupc">
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li>
+                            <a class="sub-menu" href="visites.html">Visites</a>
+                        </li>
+                        <li><a href="produits.html">Produits</a></li>
+                        <li><a href="actualités.html">Actualités</a></li>
+                        <li><a href="gites.html">Gîtes</a></li>
+                        <li><a class="active" href="contact.html">Contact</a></li>
+                    </ul>
+
+                </div>
+
+
+            </div>
+            <div class="un">
+                <div class="li">
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li>
+                            <a class="sub-menu" href="visites.html">Visites</a>
+                        </li>
+                        <li><a href="produits.html">Produits</a></li>
+                        <li><a href="actualités.html">Actualités</a></li>
+                        <li><a href="gites.html">Gîtes</a></li>
+                        <li><a class="active" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+        <div id="menu-toggle" class="menu-toggle me">
+            <i class="fas fa-bars" aria-hidden="true"></i>
+            <div class="logo2"><img src="images/logo_chevre_portable.png" class="logom"
+                    alt="logo chèvrerie du brabant couleur marron clair et foncé avec une chèvre et une montagne"></div>
+        </div>
+    </header>
+
+    <!-- ////////////////////////////////////// MAIN ///////////////////////////////////////////// -->
+    <main>
+        <section>
+            <article>
+                <div class="contact">
+                    <h2 class="contact__titre">Contact</h2>
+                    <div class="contact__container" id="adresse">
+                        <div class="contact__container__image">
+                            <img src="images/contact/chemin.png" class="chemin"
+                                alt="Carte repréenter par des villes et routes aux alentours de la chèvrerie du brabant">
+                        </div>
+                        <div class="contact__container__groupetexte">
+                            <div class="contact__container__groupetexte__texte">
+                                <p class="contact__container__groupetexte__texte__texte2">
+                                    <b>Adresse</b>
+                                </p>
+                                <p class="contact__container__groupetexte__texte__texte2">Jeanne et Bruno Lecomte
+                                </p>
+                                <p class="contact__container__groupetexte__texte__texte2">5 chemin du Haut des</p>
+                                <p class="contact__container__groupetexte__texte__texte2"> Bouchaux</p>
+                                <p class="contact__container__groupetexte__texte__texte2">Col du Brabant</p>
+                                <p class="contact__container__groupetexte__texte__texte2"> 88250 La Bresse</p>
+                                <p class="contact__container__groupetexte__texte__texte2">Tél. : 03 29 25 66 16</p>
+                            </div>
+                            <div class="contact__container__groupetexte__texte">
+                                <p class="contact__container__groupetexte__texte__texte3"><b>Accès depuis la Bresse</b></p>
+                                <p class="contact__container__groupetexte__texte__texte3">Prendre la direction du "col
+                                    du Brabant" et monter jusqu'au col.
+                                </p>
+                                <p class="contact__container__groupetexte__texte__texte3">La chèvrerie est à 400m, un
+                                    panneau vous indique la direction à suivre.</p>
+                                <p class="contact__container__groupetexte__texte__texte3">Col du Brabant</p>
+                                <p class="contact__container__groupetexte__texte__texte3">Vous pouvez soit continuer en
+                                    voiture, soit vous garer au col pour profiter pleinement des paysages en marchant
+                                    jusqu'à la Chèvrerie.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1353453.85256611!2d5.39722568998246!3d48.50515860536971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4793c92add5c6bff%3A0xa2f70d444d87bc78!2s5%20Chemin%20du%20Haut%20des%20Bouchaux%2C%2088250%20La%20Bresse!5e0!3m2!1sfr!2sfr!4v1572098957642!5m2!1sfr!2sfr"
+                    width="100" height="450" class="iframe" allowfullscreen=""></iframe>
+                <div class="formulaire">
+                    <form action="include/reception.php" method="POST">
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="fname">Prénom</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" id="fname" name="firstname" placeholder="Votre prénom ..."
+                                    class="input">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="lname">Nom de famille</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" id="lname" name="lastname" placeholder="Votre nom de famille ..."
+                                    class="input">
+                            </div>
+                        </div>
+                        <div class="row">
+                                <div class="col-25">
+                                        <label for="sujet">sujet</label>
+                                </div>
+                                <div class="col-75">
+                                        <input type="text" id="sujet" name="sujet">
+                                </div>
+                            </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="email">Mail</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" name="email" id="email" placeholder="E-mail">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="country">Pays</label>
+                            </div>
+                            <div class="col-75">
+                                <select id="country" name="country">
+                                    <option value="france">France</option>
+                                    <option value="Allemagne">Allemagne</option>
+                                    <option value="Suisse">Suisse</option>
+                                    <option value="Luxembourg">Luxembourg</option>
+                                    <option value="Autriche">Autriche</option>
+                                    <option value="Belgique">Luxembourg</option>
+                                    <option value="Autre">Autre ...</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="subject">Message</label>
+                            </div>
+                            <div class="col-75">
+                                <textarea id="subject" name="subject" placeholder="Entrer votre message ..." class="message"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <input type="submit" value="Envoyer" class="bu" name="valider">
+                        </div>
+                    </form>
+                </div>
+            </article>
+        </section>
+    </main>
+    <!-- //////////////////////////////// FOOTER ////////////////////////////////////// -->
+
+    <footer id="footer" class="ftco-footer ftco-section">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">Nos réseaux sociaux</h2>
+                        <p>Pour plus de renseignement vous pouvez nous suivre sur nos réseaux sociaux.</p>
+                        <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                            <li class="tfco-animate"><a href="#"><span class="icon-twitter"><i
+                                            class="fab fa-twitter"></i></span></a></li>
+                            <li class="tfco-animate"><a href="#"><span class="icon-instagram"><i
+                                            class="fab fa-instagram"></i></span></a></li>
+                            <li class="tfco-animate"><a href="#"><span class="icon-facebook"><i
+                                            class="fab fa-facebook-f"></i></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4 ml-md-4">
+                        <h2 class="ftco-heading-2">Articles</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="#header"><span class="icon-long-arrow-right mr-2"></span>Haut de page</a></li>
+                            <li><a href="#adresse"><span class="icon-long-arrow-right mr-2"></span>Adresse et chemin
+                                    d'accès</a></li>
+                            <li><a href="#footer"><span class="icon-long-arrow-right mr-2"></span>Bas de Page</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">Explorez la Chèvrerie du Brabant</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html"><span class="icon-long-arrow-right mr-2"></span>Accueil</a></li>
+                            <li><a href="visites.html"><span class="icon-long-arrow-right mr-2"></span>Visites</a></li>
+                            <li><a href="produits.html"><span class="icon-long-arrow-right mr-2"></span>Produits</a>
+                            </li>
+                            <li><a href="actualités.html"><span class="icon-long-arrow-right mr-2"></span>Actualités</a></li>
+                            <li><a href="gites.html"><span class="icon-long-arrow-right mr-2"></span>Gîtes</a></li>
+                            <li><a href="contact.html"><span class="icon-long-arrow-right mr-2"></span>Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">Nos coordonnées</h2>
+                        <div class="block-23 mb-3">
+                            <ul>
+                                <li><a href="#"><i class="fas fa-map-marker-alt"></i><span class="text">5 chemin du Haut
+                                            des Bouchaix Col du Brabant 88250 La Bresse</span></a></li>
+                                <li><a href="#"><i class="fas fa-phone"></i><span class="text">+33 3 29 25 66
+                                            16</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>Copyright Houllé Baptiste & Maninchedda Ettore &copy;</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <button onclick="topFunction()" id="myBtn" title="Haut de page"><i class="fas fa-sort-up"></i></button>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="script/main.js"></script>
+    <script src="script/store.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
